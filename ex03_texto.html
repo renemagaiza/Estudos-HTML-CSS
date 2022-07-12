@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/paisagem-icon.ico" type="image/x-icon">
+    <style>
+        body{
+            font-size: 12pt;
+            padding: 10pt;
+        }
+    </style>
+    <title>Trabalhando com textos</title>
+</head>
+<body>
+    <h1>Tags para trabalhar com textos</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, vitae, voluptates distinctio dicta quisquam, perspiciatis beatae harum debitis fuga consectetur minima? Blanditiis ab unde inventore adipisci suscipit, odio aliquam dolorum!</p>
+    <strong>Usando a tag &lt;mark&gt;</strong>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab et ipsum aliquid animi natus alias, repellendus eum modi eligendi est itaque. Maxime harum <mark>voluptatibus voluptatem consectetur deleniti</mark> molestiae velit eum?</p>
+    <strong>trocando a cor do marcador!</strong>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos tenetur unde error dolor recusandae asperiores molestiae <mark style="background-color: orangered;">aliquam enim commodi ea natus ut </mark>autem, necessitatibus temporibus quisquam. Nam aperiam sit tempore.</p>
+    <strong>Texto destacado com semantica!</strong><br>
+    <i>texto em italico sem semantica!</i><br>
+    <em>texto em italico com semantica!</em>
+    <small>Textos pequenos usando a tag small</small><br>
+    <del>Deletando textos!</del><br>
+    <ins>Texto sublinhado para chamar a atencao do leitor</ins><br>
+    <u>texto desconhecido</u>
+    <hr>
+    <h3>Quimica organica</h3>
+    <p>A quimica organica e o ramo da quimica que estuda as variacoes do carbono, ex C <sup>4</sup><sub>4</sub></p>
+    <p>Segundo <q>Berzilus</q> a quimica organica e uma ramo da quimica que estuda combinacoes quimicas do carbono.</p>
+    <hr>
+    <h3>Programacao Python 3</h3>
+    <em>Exemplos de codigos python:</em>
+    <pre>
+        <code>
+            #!C:\Users\Rena\AppData\Local\Programs\Python\Python38\python.exe
+            import re
+            def ispohene(numero):
+                phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+                if phoneNumRegex.search(numero):
+                    mo = phoneNumRegex.search(numero)
+                    return  mo.group()
+                else:
+                    print('numero nao foi encontrado')
+            r=ispohene("fsxdghkfj444-777-97  76orrespondência completa, ou seja, 415-555-4242.")
+            print(r)
+            agentNamesRegex = re.compile(r'(Agent (\w\w*))')
+            m=agentNamesRegex.sub(r'Agent\033[31m \2**** \033[0m','Agent Alice told Agent Carol that Agent Eve knew Agent bob was a double agent.')
+        </code>
+    </pre>
+    <hr>
+    <h3>Citacoes em blocos ou longos</h3>
+    <blockquote cite="https://blog.kuriertecnologia.com.br/">Verificar se o endereço Web https://blog.kuriertecnologia.com.br  está certo.</blockquote>
+    <hr>
+    <h3>abreviacoes</h3>
+    <abbr title="Linguagem de Marcacao de Hipertextos">Html</abbr><br>
+    <abbr title="Instituto Nacional de Tecnologia">INT</abbr><br>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi accusamus nobis doloribus esse possimus quod et,  <abbr title="Rene Zacarias Magaiza">RZM</abbr>similique suscipit voluptate deserunt repudiandae optio vel, ex maxime iste eius ea, id quo.</p>
+    <h3>Texto invertido</h3>
+    <bdo dir="rtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vitae quasi consequuntur ipsam repellendus nihil veritatis, blanditiis dolorem sint perferendis cupiditate porro illum, fugit quae nisi. Incidunt delectus eos porro!</bdo>
+</body>
+</html>

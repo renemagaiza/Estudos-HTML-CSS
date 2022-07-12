@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'rene';
+    src: url('../fontes/SedgwickAveDisplay-Regular.ttf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: rgba(191, 153, 226, 0.445);
+}
+h1{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 2.2em;
+}
+p, div{
+    font: normal bold 1em verdana, Helvetica, sans-serif;
+    text-align: justify;
+}
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1, h2{
+    color: cadetblue;
+    text-align: center;
+}
+h3{
+    font-family: 'rene', 'Sedgwick Ave Display', cursiva;
+    font-size: 3em;
+    font-weight: normal;
+    color: rgb(68, 105, 93);
+}
+a{
+    text-align: center;
+    color: rgb(73, 61, 45);
+}
+p{
+    text-indent: 20px;
+    text-decoration: dotted;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupamento de Caixas</title>
+    <style>
+        body{
+            font: normal 300 1em 'serif';
+            background-color: dimgray;
+            margin: 0px;
+
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 5px;
+        }
+        nav{
+            background-color: rgb(194, 194, 194);
+            padding: 3px;
+            padding-right: 10px;
+          
+        }
+        nav > a{
+            color: coral;
+            margin-right: 40px;
+            text-decoration: none;
+        }
+        nav > a:hover{
+            color:chocolate;
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            margin: 10px;
+        }
+        article{
+            background-color: lightgray;
+            padding: 10px;
+        }
+        article > aside{
+            background-color: rgb(95, 91, 91);
+        }
+        footer{
+            padding: 3px;
+            margin: 0px;
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+
+
+        }
+        div{
+            background-color: aqua;
+            height:100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+        footer > p{
+            margin: 0px;
+            border: 8px solid black;
+            border-image-source: url('imagens/thumb-python.png');
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="noticias">
+            <article>
+                <h2>Noticias de Mozambique</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure explicabo nihil blanditiis iste laboriosam nam facilis in ipsum minima, doloribus distinctio vel commodi, aliquam exercitationem ut quia magni, dolore delectus!</p>
+                <aside>
+                    artigo publicado pelo Rene Magaiza
+                </aside>
+            </article>
+        </section>
+    </main>
+    <div></div>
+    <footer>
+        <p>Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

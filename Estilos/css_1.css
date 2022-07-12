@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/*estilizando o nosso conteudo html*/
+div {
+    background-color: rgb(141, 190, 174);
+    color: rgb(70, 53, 119);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+}
+h2{
+    color: darkgray;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(116, 192, 122, 0.507);
+}

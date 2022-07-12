@@ -1,0 +1,103 @@
+@charset "utf-8";
+@font-face {
+    font-family: droid;
+    src: url('fontes/idroid.otf') format('truetype');
+    font-size: 1em;
+    font-weight: normal;
+}
+body{
+    background-color: darkseagreen;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+    background-color: darkgreen;
+    box-shadow: 3px -12px black;
+    padding: 10px;
+}
+header > h1, header > p{
+    color: aliceblue;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+}
+nav > a{
+    color: aliceblue;
+    text-decoration: none;
+    margin-left: 35px;
+    padding: 8px;
+    border-radius: 20px;
+}
+nav > a:hover{
+    color:darkgreen;
+    background-color: darkseagreen;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+main{
+    background-color: aliceblue;
+    color: black;
+    width: 80%;
+    padding: 0px;
+    margin: auto;
+    padding: 0px;
+    border-radius: 5px;
+}
+section{
+    color: black;
+    padding: 15px;
+}
+#video{
+    background-color: rgb(3, 68, 25);
+    margin: 0px;
+    padding: auto;
+}
+main aside, p{
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 2em;
+}
+h2, h3, h4{
+    font-family: 'droid', cursive;
+    color: darkgreen;
+}
+aside{
+    padding: 15px;
+    padding-top: 0px;
+}
+#aside{
+    background-color: rgb(193, 253, 193);
+    border-radius: 20px;
+    margin: 11px;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+#aside > h5{
+    margin: 0px;
+    color: aliceblue;
+    border-radius: 20px 20px 0px 0px;
+    background-color: rgb(126, 190, 126);
+}
+#aside p{
+    padding: 15px;
+}
+aside > p{
+    margin: 0px;
+}
+
+footer{
+    color: aliceblue;
+    background-color: rgb(0, 51, 0);
+    padding: 3px;
+    margin-top: 12px;
+}
+footer > p{
+    margin: 0px;
+    text-align: center;
+    font-size: 0.7em;
+}
+img, iframe{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
