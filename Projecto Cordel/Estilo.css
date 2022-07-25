@@ -1,0 +1,99 @@
+@charset "utf-8";
+@font-face {
+    font-family: passone;
+    src: url("fontes/PassionOne/PassionOne-Bold.ttf") format('truetype');
+
+}
+@font-face {
+    font-family:  sriracha;
+    src: url("fontes/Sriracha/Sriracha-Regular.ttf") format("truetype");
+    font-weight: 600;
+}
+:root{
+    --cor1: #000000;
+    --cor2: #FFFFFF;
+    /*fontes*/
+    --font1: 'passone', cursive;
+    --font2: 'sriracha', cursive;
+    --font3: Verdana, Sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+}
+header{
+    background-color: #000000;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+header > h1{
+    font-family: var(--font1);
+    color: rgba(11, 250, 11, 0.616);
+    font-size: 9vw;
+}
+h1 >strong{
+    color: darkgreen;
+}
+header p{
+    color: white;
+}
+p > a{
+    color: burlywood;
+    text-decoration: none;
+    font-family: var(--font3);
+    font-weight: 600;
+}
+p > a:hover{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+main p{
+    width: 46%;
+    font-family: var(--font2);
+    font-size: 4.5vw;
+    padding: 10px;
+    padding-left: 35px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+article span{
+    display: inline-block;
+    height: 100vh;
+    font-family: var(--font2);
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.479);
+
+}
+span p{
+    font-size: 4.5vw;
+    width: 29vw;
+}
+article section{
+    background-image: url("imagens/background001.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 100vh;
+    padding: 25px;
+}
+#sect2{
+    background-image: url("imagens/background002.jpg");
+}
+footer > p{
+    text-align: center;
+    padding: 15px;
+    font-family: var(--font3);
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+footer a{
+    text-decoration: underline;
+    font-size: 0.8em;
+}
