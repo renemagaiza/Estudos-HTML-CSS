@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1 de tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: coral;
+            color: #130e08;
+        }
+        ::-webkit-scrollbar{
+            width: 20px;
+        }
+        ::-webkit-scrollbar-track{
+            background-color: rgba(0, 255, 255, 0.308);
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: rgba(255, 38, 0, 0.966);
+        }
+        table{
+            width: 800px;
+        }
+    
+        th, td{
+            border: 0px solid black;
+            padding: 10px;
+            width: 200px;
+            transition-duration: 0.1s;
+            text-align: center;
+            background-color: rgba(169, 169, 169, 0.774);
+        }
+        td:hover{
+            background-color: rgba(169, 169, 169, 0.349);
+        }
+        col.c3{
+            background-color: darkorange;
+        }
+        div{
+            height: 100vh;
+            overflow-x: scroll;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h1>Respondendo ao desafio 13</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos illo debitis fugiat odio labore enim eius sed quod fuga perferendis odit velit, in hic, accusantium deserunt numquam? Illo, molestias nobis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde inventore, incidunt obcaecati praesentium sint qui quia ducimus omnis delectus, molestias velit placeat, voluptates asperiores recusandae sequi? Perferendis, nemo sed. Dignissimos.
+    </p>
+    <div>
+        <table>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td rowspan="2">3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td colspan="3">8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">10</td>
+                    <td colspan="2">11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                </tr>
+            </tbody>
+        
+        </table>
+        <h1>Respondendo ao segundo desafio</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <td colspan="4">A</td>
+                    <td rowspan="4">B</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I</td>
+                </tr>
+                <tr>
+                    <td>J</td>
+                    <td>L</td>
+                    <td>M</td>
+                </tr>
+                <tr>
+                    <td colspan="4">N</td>
+                </tr>
+            </tbody>
+        </table>
+        <h1>Pauta </h1>
+        <table>
+            <colgroup>
+                <col class="c1">
+                <col class="c2">
+                <col class="c3" span="2">
+                <col class="c4">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th rowspan="2">Area</th>
+                    <th rowspan="2">Disciplinas</th>
+                    <th colspan="2">Notas</th>
+                    <th rowspan="2">Media</th>
+                </tr>
+                <tr>
+                    <th>Nota 1</h>
+                    <th>Nota 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" rowspan="4">Exatas</th>
+                    <th>Matematica</th>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th>Fisica</th>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th>Quimica</th>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th>Biologia</th>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th colspan="4">Media de Exatas</th>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Humanas</th>
+                    <th>Historia</th>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th>Geografia</th>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                    <td>0.0</td>
+                </tr>
+                <tr>
+                    <th colspan="4">Media de Humanas</th>
+                    <td>0.0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos illo debitis fugiat odio labore enim eius sed quod fuga perferendis odit velit, in hic, accusantium deserunt numquam? Illo, molestias nobis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde inventore, incidunt obcaecati praesentium sint qui quia ducimus omnis delectus, molestias velit placeat, voluptates asperiores recusandae sequi? Perferendis, nemo sed. Dignissimos.
+    </p>
+</body>
+</html>

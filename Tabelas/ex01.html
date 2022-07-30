@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 600px;
+            height: 100px;
+            border-collapse: collapse;
+            border: 1px solid ;
+        }
+        td{
+            border: 2px solid black;
+            padding: 15px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        tr#sinza{
+            background-color: dimgrey;
+        }
+        tr.yellow{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        Hierarquia de tebelas
+        1 Table
+        2 Table row (tr)
+        3 Table head (th)
+        4 Table data (td)
+        fim table
+    -->
+    <h1>Minha Primeira Tabela</h1>
+    <table>
+        
+        <tr class="yellow">
+            
+            <td>A1</td>
+            <td>A2</td>
+            <td>A3</td>
+        </tr>
+        
+        <tr id="sinza">
+            <td>B1</td>
+            <td>B2</td>
+            <td>B3</td>
+        </tr>
+        <tr class="yellow">
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+        </tr>
+    </table>
+</body>
+</html>

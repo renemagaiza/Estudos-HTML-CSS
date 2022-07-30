@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediario em tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            position: relative;
+            width: 500px;
+            border-collapse: collapse;
+
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        thead, tfoot{
+            color: white;
+            background-color: gray;
+        }
+        tbody tr:nth-child(odd){
+            background-color: lightgray;
+            font-weight: bold;
+        } 
+        td, th{
+            border: 2px solid black;
+            padding: 10px;
+        }
+        td.numero{
+            text-align: right;
+        }
+        caption{
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando tabelas grandes</h1>
+    <!--
+        ANOTOMIA DE TABELAS GRANDES
+        table
+            thead 
+                tr, td, th
+            tbody
+                tr, td, th
+            tfoot
+                tr, td, th
+    -->
+    <table>
+        <caption>Populacao federal</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">Populacao</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sao paulo</td>
+                <td class="numero">45.915.256</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17.445.545</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">41.221.321</td>
+            </tr>
+            <tr>
+                <td>Sofala</td>
+                <td class="numero">45.211.321</td>
+
+            </tr>
+            <tr>
+                <td>Sao paulo</td>
+                <td class="numero">45.915.256</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17.445.545</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">41.221.321</td>
+            </tr>
+            <tr>
+                <td>Sofala</td>
+                <td class="numero">45.211.321</td>
+
+            </tr>
+            <tr>
+                <td>Sao paulo</td>
+                <td class="numero">45.915.256</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17.445.545</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">41.221.321</td>
+            </tr>
+            <tr>
+                <td>Sofala</td>
+                <td class="numero">45.211.321</td>
+
+            </tr>
+            <tr>
+                <td>Sao paulo</td>
+                <td class="numero">45.915.256</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17.445.545</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">41.221.321</td>
+            </tr>
+            <tr>
+                <td>Sofala</td>
+                <td class="numero">45.211.321</td>
+
+            </tr>
+            <tr>
+                <td>Sao paulo</td>
+                <td class="numero">45.915.256</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17.445.545</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">41.221.321</td>
+            </tr>
+            <tr>
+                <td>Sofala</td>
+                <td class="numero">45.211.321</td>
+
+            </tr>
+            <tr>
+                <td>Sao paulo</td>
+                <td class="numero">45.915.256</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17.445.545</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">41.221.321</td>
+            </tr>
+            <tr>
+                <td>Sofala</td>
+                <td class="numero">45.211.321</td>
+
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="numero">454.915.154</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h1>Horario</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Segunda</th>
+                <th>Terca</th>
+                <th>Quarta</th>
+                <th>Quinta</th>
+                <th>Sexta</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bernardo</td>
+                <td>Assunta</td>
+                <td>Bernardo</td>
+                <td>Ed. Fisica</td>
+                <td>Assunta</td>
+            </tr>
+            <tr>
+                <td>Bernardo</td>
+                <td>Assunta</td>
+                <td>Bernardo</td>
+                <td>Nhaliginga</td>
+                <td>Assunta</td>
+            </tr>
+            <tr>
+                <td>Bernardo</td>
+                <td>Assunta</td>
+                <td>Bernardo</td>
+                <td>Nhaliginga</td>
+                <td>Assunta</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos, optio delectus quod, quam rem laborum repellendus, voluptate error aliquam eum repudiandae placeat! Quasi, laborum ullam ipsam nobis cum provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ducimus nostrum repudiandae assumenda, ea, harum temporibus est totam hic magnam, veritatis non. Amet praesentium cupiditate fuga quidem natus asperiores impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis nulla ex impedit officiis? Quia dolorem blanditiis illo quibusdam! Facere rem, beatae officia possimus consequuntur pariatur fugit autem sunt. Voluptate?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos, optio delectus quod, quam rem laborum repellendus, voluptate error aliquam eum repudiandae placeat! Quasi, laborum ullam ipsam nobis cum provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ducimus nostrum repudiandae assumenda, ea, harum temporibus est totam hic magnam, veritatis non. Amet praesentium cupiditate fuga quidem natus asperiores impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis nulla ex impedit officiis? Quia dolorem blanditiis illo quibusdam! Facere rem, beatae officia possimus consequuntur pariatur fugit autem sunt. Voluptate?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos, optio delectus quod, quam rem laborum repellendus, voluptate error aliquam eum repudiandae placeat! Quasi, laborum ullam ipsam nobis cum provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ducimus nostrum repudiandae assumenda, ea, harum temporibus est totam hic magnam, veritatis non. Amet praesentium cupiditate fuga quidem natus asperiores impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis nulla ex impedit officiis? Quia dolorem blanditiis illo quibusdam! Facere rem, beatae officia possimus consequuntur pariatur fugit autem sunt. Voluptate?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos, optio delectus quod, quam rem laborum repellendus, voluptate error aliquam eum repudiandae placeat! Quasi, laborum ullam ipsam nobis cum provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ducimus nostrum repudiandae assumenda, ea, harum temporibus est totam hic magnam, veritatis non. Amet praesentium cupiditate fuga quidem natus asperiores impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis nulla ex impedit officiis? Quia dolorem blanditiis illo quibusdam! Facere rem, beatae officia possimus consequuntur pariatur fugit autem sunt. Voluptate?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos, optio delectus quod, quam rem laborum repellendus, voluptate error aliquam eum repudiandae placeat! Quasi, laborum ullam ipsam nobis cum provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ducimus nostrum repudiandae assumenda, ea, harum temporibus est totam hic magnam, veritatis non. Amet praesentium cupiditate fuga quidem natus asperiores impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis nulla ex impedit officiis? Quia dolorem blanditiis illo quibusdam! Facere rem, beatae officia possimus consequuntur pariatur fugit autem sunt. Voluptate?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dignissimos, optio delectus quod, quam rem laborum repellendus, voluptate error aliquam eum repudiandae placeat! Quasi, laborum ullam ipsam nobis cum provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ducimus nostrum repudiandae assumenda, ea, harum temporibus est totam hic magnam, veritatis non. Amet praesentium cupiditate fuga quidem natus asperiores impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab perspiciatis nulla ex impedit officiis? Quia dolorem blanditiis illo quibusdam! Facere rem, beatae officia possimus consequuntur pariatur fugit autem sunt. Voluptate?
+    </p>
+</body>
+</html>
