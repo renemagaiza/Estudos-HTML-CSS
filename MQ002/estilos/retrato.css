@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+/*Aparelhos em pee*/
+
+body{
+    background: url("../Imagens/cev-portrait.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
