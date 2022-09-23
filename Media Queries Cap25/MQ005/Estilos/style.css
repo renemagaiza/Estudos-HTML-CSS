@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+/* Todas as demais midias*/
+
+/*
+    Typical Device Break-Points:
+    #elas Pequenas:
+    Celular: 320px - 600px;
+    Tablets: 601px - 890px;
+    laptops: 891px - 1200px;
+    #Telas grandes:
+    Desktop: 1201px +px;
+    #telas extragrandes:
+    TV; 1201px - + infinito.
+*/
+
+ 
+/*Tablets*/
+
+@media screen and (min-width: 601px) and (max-width: 890px) {
+    p#menu{
+        display:none;
+    }
+    nav#imenu{
+        display: block;
+    }
+    ul > li{
+        list-style-type: none;
+        display: inline-block;
+
+    }
+    header > nav > ul > li > a{
+        display: inline-block;
+        text-align: right;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+        border-bottom: none;
+        border-radius: 10px;
+        background-color: darkgray;
+        box-sizing: border-box;
+    }
+    header > nav > ul > li > a:hover{
+        background-color: rgb(219, 219, 219);
+        border-bottom: 3px solid darkgray;
+        font-weight: bold;
+    }  
+}
+
+/* Laptops */
+
+@media screen and (min-width: 891px) and (max-width: 1200px) {
+    main{
+        width: 80vw;
+        
+    }
+    p#menu{
+        display:none;
+    }
+    nav#imenu{
+        display: block;
+    }
+    ul > li{
+        list-style-type: none;
+        display: inline-block;
+
+    }
+    header > nav > ul > li > a{
+        display: inline-block;
+        text-align: right;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+        border-bottom: none;
+        border-radius: 10px;
+        background-color: darkgray;
+        box-sizing: border-box;
+    }
+    header > nav > ul > li > a:hover{
+        background-color: rgb(219, 219, 219);
+        border-bottom: 3px solid darkgray;
+        font-weight: bold;
+    }  
+}
+
+/*Desktops e TVs*/
+
+@media screen and (min-width: 1201px) {
+    main{
+        width: 60vw;
+    }
+    p#menu{
+        display:none;
+    }
+    nav#imenu{
+        display: block;
+    }
+    ul > li{
+        list-style-type: none;
+        display: inline-block;
+
+    }
+    header > nav > ul > li > a{
+        display: inline-block;
+        text-align: right;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+        border-bottom: none;
+        border-radius: 10px;
+        background-color: darkgray;
+        box-sizing: border-box;
+    }
+    header > nav > ul > li > a:hover{
+        background-color: rgb(219, 219, 219);
+        border-bottom: 3px solid darkgray;
+        font-weight: bold;
+    }  
+}
+
+@media print {
+    body main article {
+        font-family: 'Times New Roman', 'Times', serif;
+    }
+    header{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    main{
+        margin-top: 15px;
+    }
+    main::after{
+        content: "\nEste documento e um site criado e publicado por Rene Zacarias Magaiza.";
+        
+    }
+    footer{
+        display: none;
+    }
+}

@@ -28,8 +28,9 @@ header h1{
 }
 
 article{
-    width: 600px;
+    width: 80vw;
     margin: auto;
+    padding: 10px;
     text-align: justify;
     line-height: 2em;
 }

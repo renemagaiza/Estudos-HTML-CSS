@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+/* Todas as demais midias*/
+
+/*
+    Typical Device Break-Points:
+    #elas Pequenas:
+    Celular: 320px - 600px;
+    Tablets: 601px - 890px;
+    laptops: 891px - 1200px;
+    #Telas grandes:
+    Desktop: 1201px +px;
+    #telas extragrandes:
+    TV; 1201px - + infinito.
+*/
+
+/*Tablets*/
+
+@media screen and (min-width: 601px) and (max-width: 890px) {
+    body{
+        background: url("../Imagens/back-tablet.jpg") no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    img#phone {
+        display: none;
+    }
+    img#tablete {
+        display: block;
+    }
+    img#print {
+        display: none;
+    }
+    img#PC {
+        display: none;
+    }
+    img#TV {
+        display: none;
+    }
+}
+
+/* PC */
+
+@media screen and (min-width:891px) and (max-width:1200px) {
+    body{
+        background: url("../Imagens/back-pc.jpg") no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    img#phone {
+        display: none;
+    }
+    img#tablete {
+        display: none;
+    }
+    img#print {
+        display: none;
+    }
+    img#PC {
+        display: block;
+    }
+    img#TV {
+        display: none;
+    }   
+}
+
+/* Desktop e TVs*/
+
+@media screen and (min-width: 1201px) {
+    body{
+        background: url("../Imagens/back-tv.jpg") no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    img#phone {
+        display: none;
+    }
+    img#tablete {
+        display: none;
+    }
+    img#print {
+        display: none;
+    }
+    img#PC {
+        display: none;
+    }
+    img#TV {
+        display: block;
+    }
+}
+
+/* Impressoras*/
+
+@media print {
+    body{
+        background: url("../Imagens/back-print.jpg") no-repeat;
+
+    }
+    main{
+        box-sizing: border-box;
+        border: 3px solid black;
+        margin-bottom: 100px;
+    }
+    main                                                ::after{
+        content: "Este documento e um site criado e publicado por Rene Zacarias Magaiza.";
+        
+    }
+    h1 {
+        text-align: center;
+        text-shadow: none;
+        color: rgb(255, 255, 255);
+    }
+    img#phone {
+        display: none;
+    }
+    img#tablete {
+        display: none;
+    }
+    img#print {
+        display: block;
+    }
+    img#PC {
+        display: none;
+    }
+    img#TV {
+        display: none;
+    }
+}

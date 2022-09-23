@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* Versao Mobile First */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+
+}
+
+body {
+    background: url("Imagens/back-phone.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.829);
+    width: 80vw;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+h1 {
+    text-align: center;
+    text-shadow: 5px 5px 7px black;
+    color: rgb(255, 255, 255);
+}
+img {
+    display: block;
+    margin: auto;
+}
+
+img#phone {
+    display: block;
+}
+img#tablete {
+    display: none;
+}
+img#print {
+    display: none;
+}
+img#PC {
+    display: none;
+}
+img#TV {
+    display: none;
+}
